@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/default.css')}}">
+    <title>Kolade Gideon</title>
+</head>
+<body>
+    <section class="section1">
+        <div class="main-container">
+            <div class="greeting-wrapper">
+                <h1>Hello Kolade Here!</h1>
+            </div>
+            
+            <div class="intro-wrapper">
+                <div class="nav-wrapper">
+                    <div class="min-max-close-wrapper">
+                        <div id="min" class="min-max-close"></div>
+                        <div id="max" class="min-max-close"></div>
+                        <div id="close" class="min-max-close"></div>
+                    </div>
+                    <ul id="navigation">
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="left-column">
+                    <img id="profile-pic" src="{{url_for('static', filename='images/kola.png')}}">
+                    <h5 style="text-align: center; line-height:0;">Personalize Them </h5>
+
+                    <div id="theme-options-wrapper">
+                        <div id="light" class="theme-dot"></div>
+                        <div id="blue" class="theme-dot"></div>
+                        <div id="green" class="theme-dot"></div>
+                        <div id="purple" class="theme-dot"></div>
+                    </div>
+
+                    <p id="note">Theme will be saved for your next vist</p>
+                </div>
+
+                <div class="right-column">
+                    <div id="intro-shadow">
+                        <div id="intro">
+                            <div id="tr" class="corner"></div>
+                            <div id="tl" class="corner"></div>
+                                <h2>What I Do</h2>
+                                <p>I combine Machine learning and software development knowledge, 
+                                to create 21st century products.
+                                </p>
+                            <div id="br" class="corner"></div>
+                            <div id="bl" class="corner"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section2">
+        <div class="main-container">
+            <div class="about-wrapper">
+                <div class="about-me">
+                    <h4>More about me</h4>
+                    
+                    <p>Am very passinate about Artifical Intelligence,
+                        whiles also hopeful on it impact on us.
+                    </p>
+                    <p>In general i like working on software product, and am open to new and interesting
+                        oppourtunities.
+                    </p>
+                
+                    <hr>
+
+                    <h4>TOP STACKS</h4>
+
+                    <p>Python, JavaScript developer and a Machine Learning Engineer: <a target="_blank" href="{{url_for('static', filename='readables/KOLADE-GIDEON-CURRICULUM-VITAE.pdf')}}">Download Resume</a></p>
+                
+                    <div id="skills">
+                        <ul>
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>flask</li>
+                            <li>nodejs</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+
+                        <ul>
+                            <li>Keras</li>
+                            <li>Pytorch</li>
+                            <li>Sci-learn</li>
+                            <li>MongoDB</li>
+                            <li>Azure Machine Learning</li>
+                        </ul>
+                    </div>
+                
+                </div>
+
+                <div class="social-links">
+                    <h3>Ping me below</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="column">
+                            <a href="https://github.com/allaye" target="_blank"><img style="width:45%" id="social-img" src="{{url_for('static', filename='images/github.svg')}}"></a>
+                        </div>
+                        <div class="column">
+                            <a href="https://twitter.com/allaye199" target="_blank"><img style="width:45%" id="social-img" src="{{url_for('static', filename='images/twitter.svg')}}"></a>
+                        </div>
+                        <div class="column">
+                            <a href="https://www.linkedin.com/in/kolade-gideon-7585a893/" target="_blank"><img style="width:45%" id="social-img" src="{{url_for('static', filename='images/linkedin.svg')}}"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section1">
+        <div class="main-container">
+            <h3 style="text-align: center;">Past, Inprogress and Future Projects</h3>
+
+            <div class="project-wrapper">
+                <div>
+                    <div class="project">
+                        <img class="thumbnail" src="{{url_for('static', filename='images/twitter.svg')}}">
+                        <div class="project-preview">
+                            <h6 class="project-name">Food Tracker App</h6>
+                            <p class="tech-stack">Tech Stack: Python, flask, JavaScript</p>
+                            <p class="project-description">This is a new project coming up</p>
+                            <a href="#">Read More...</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="project">
+                        <img class="thumbnail" src="{{url_for('static', filename='images/twitter.svg')}}">
+                        <div class="project-preview">
+                            <h6 class="project-name">Stories</h6>
+                            <p class="tech-stack">Tech Stack: javascript, Nodejs, MongoDB, Google OAuth</p>
+                            <p class="project-description">This is a new project coming up</p>
+                            <a href="#">Read More...</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="project">
+                        <img class="thumbnail" src="{{url_for('static', filename='images/twitter.svg')}}">
+                        <div class="project-preview">
+                            <h6 class="project-name">URL Shortener</h6>
+                            <p class="tech-stack">Tech Stack: JavaScript, Nodejs, Express, MongoDB</p>
+                            <p class="project-description">This is a new project coming up</p>
+                            <a href="#">Read More...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section2">
+        <div class="main-container">
+            <h3 style="text-align: center;">Please Drop A Message</h3>
+            <form id="contact-form" method="POST" action="/">
+                {{form.hidden_tag()}}
+                
+                {{form.name.label()}}
+                {{form.name(class="input-field")}}
+
+                {{form.subject.label()}}
+                {{form.subject(class="input-field")}}
+
+                {{form.email.label()}}
+                {{form.email(class="input-field")}}
+
+                {{form.message.label()}}
+                {{form.message(class="input-field")}}
+                
+                {{form.submit()}}
+            </form>
+        </div>
+    </section>
+</body>
+</html>
