@@ -11,7 +11,7 @@
 
     --previwGB: rgb(251, 249, 243, 0.8);
 
-    --introShadow: #f0ead6;
+    --introShadow: #eedb9c;
 
     --buttonColor: black;
 }
@@ -220,8 +220,8 @@ h6{ font-size: 16px;}
     grid-area: right-column;
     display: grid;
     align-content: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 40px; /*30*/
+    padding-bottom: 90px; /*30*/
 }
 
 #intro-shadow{
@@ -236,7 +236,7 @@ h6{ font-size: 16px;}
     width: 300px;
     border: 1.5px solid #17a2b8;
     background-color: var(--previwGB);
-    padding: 5px;
+    padding: 15px;
     position: relative;
 }
 

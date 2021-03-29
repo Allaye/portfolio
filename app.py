@@ -12,7 +12,7 @@ class EmailForm(FlaskForm):
     subject = StringField('Subject')
     email = StringField('Email', validators=[DataRequired(), Email()])
     message = TextAreaField('Message', validators=[DataRequired()])
-    submit = SubmitField('Send',)
+    submit = SubmitField('Send')
 
 
 @app.route('/', methods=['POST', 'GET'])
