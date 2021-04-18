@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Russo+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{url_for('static', filename='css/default.css')}}">
+    <link id="theme-style" type="text/css" rel="stylesheet">
+
     <title>Kolade Gideon</title>
 </head>
 <body>
@@ -22,26 +24,26 @@
                 <div class="nav-wrapper">
                     <div class="min-max-close-wrapper">
                         <div id="min" class="min-max-close"></div>
-                        <div id="max" class="min-max-close"></div>
                         <div id="close" class="min-max-close"></div>
+                        <div id="max" class="min-max-close"></div>
                     </div>
                     <ul id="navigation">
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#contact-form">Contact</a></li>
                     </ul>
                 </div>
 
                 <div class="left-column">
-                    <img id="profile-pic" src="{{url_for('static', filename='images/kola.png')}}">
-                    <h5 style="text-align: center; line-height:0;">Personalize Them </h5>
+                    <img id="profile-pic" src="{{url_for('static', filename='images/k3.png')}}">
+                    <h5 style="text-align: center; line-height:0;"></h5>
 
                     <div id="theme-options-wrapper">
-                        <div id="light" class="theme-dot"></div>
-                        <div id="blue" class="theme-dot"></div>
-                        <div id="green" class="theme-dot"></div>
-                        <div id="purple" class="theme-dot"></div>
+                        <div data-mode="light" id="light" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue" class="theme-dot"></div>
+                        <div data-mode="green" id="green" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple" class="theme-dot"></div>
                     </div>
 
-                    <p id="note">Here you will get popular quote from Techies</p>
+                    <p id="note"></p>
                 </div>
 
                 <div class="right-column">
@@ -79,7 +81,7 @@
 
                     <h4>TOP STACKS</h4>
 
-                    <p>Python, JavaScript developer and a Machine Learning Engineer: <a target="_blank" href="{{url_for('static', filename='readables/KOLADE-GIDEON-CURRICULUM-VITAE.pdf')}}">Download Resume</a></p>
+                    <p>Python, JavaScript developer and a Machine Learning Engineer: <a target="_blank" href="{{url_for('static', filename='readables/KOLADE GIDEON-CURRICULUM-VITAE.pdf')}}">Download Resume</a></p>
                 
                     <div id="skills">
                         <ul>
@@ -132,7 +134,7 @@
                             <h6 class="project-name">Food Tracker App</h6>
                             <p class="tech-stack">Tech Stack: Python, flask, JavaScript, MongoDB</p>
                             <p class="project-description">This is a new project coming up</p>
-                            <a href="#">Read More...</a>
+                            <a href="{{url_for('project')}}">Read More...</a>
                         </div>
                     </div>
                 </div>
@@ -143,7 +145,7 @@
                             <h6 class="project-name">Stories</h6>
                             <p class="tech-stack">Tech Stack: javascript, Nodejs, MongoDB, Google OAuth</p>
                             <p class="project-description">This is a new project coming up</p>
-                            <a href="#">Read More...</a>
+                            <a href="{{url_for('project')}}">Read More...</a>
                         </div>
                     </div>
                 </div>
@@ -154,7 +156,7 @@
                             <h6 class="project-name">URL Shortener</h6>
                             <p class="tech-stack">Tech Stack: JavaScript, Nodejs, Express, MongoDB</p>
                             <p class="project-description">This is a new project coming up</p>
-                            <a href="#">Read More...</a>
+                            <a href="{{url_for('project')}}">Read More...</a>
                         </div>
                     </div>
                 </div>
@@ -184,5 +186,6 @@
             </form>
         </div>
     </section>
+    <script src="{{url_for('static', filename='javascript/script.js')}}"></script>
 </body>
 </html>

@@ -1,0 +1,28 @@
+:root{
+    --mainColor:#15202b;
+    --secondaryColor:#192734;
+
+    --borderColor:#164D56;
+
+    --mainText:white;
+    --secondaryText:#eeeeee;
+
+    --themeDotBorder: #fff;
+
+    --previwGB: rgb(25, 39, 52, 0.8);
+
+    --introShadow: #111921;
+
+    --buttonColor: #17a2b8;
+}
+
+
+#profile-pic{
+    display: block;
+    margin: 0 auto;
+    content:url('../images/k2.png');
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border: 2px solid var(--borderColor);
+}

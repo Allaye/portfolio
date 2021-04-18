@@ -21,6 +21,10 @@ html, body {
     margin: 0;
 }
 
+boby *{
+    transition: 0.9s;
+}
+
 h1 , h2, h3, h4, h5, h6, strong{
     color: var(--mainText);
     font-family: 'Russo One', sans-serif;
@@ -97,6 +101,10 @@ h6{ font-size: 16px;}
     justify-content: space-between;
     align-items: center; 
     background-color: var(--mainColor);
+}
+
+#navigation a{
+    color: var(--mainText); 
 }
 
 #navigation{
@@ -373,7 +381,7 @@ h6{ font-size: 16px;}
 }
 
 #contact-form textarea{
-    min-width: 100px;
+    min-height: 100px;
     font-size: 14px;
 }
 
