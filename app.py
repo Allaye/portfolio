@@ -27,7 +27,7 @@ def sendemail(name, subject, email, message):
     msg = EmailMessage()
     context = ssl.create_default_context()
     with smtplib.SMTP_SSL(os.environ.get('mail_server'), os.environ.get('mail_port'), context=context) as server:
-        server.login(address, password) 
+        server.login(address, password)
         msg['Subject'] = subject
         msg['From'] = address
         msg['To'] = address
